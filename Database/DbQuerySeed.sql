@@ -1,4 +1,4 @@
-USE [ShopV2]
+USE [ShopV3]
 GO
 
 ------ USERS SEED
@@ -25,8 +25,9 @@ Values('Pop Alexandru','pop.alexandru@yahoo.com','0745034551','Observator 10','P
 ('Altex Romania','contact@altexro.com','0213199939','Sos. Bucuresti Nord Nr.10, Voluntari','Altex','Altex'),
 ('Domo Romania','comenzi@domo.ro','0372245334','Str. Iuliu Maniu 7 Corp A parter, Sector 6 Bucuresti ','Domo','Domo'),
 ('Media Galaxy','contact@altexro.com','0213199939','Sos. Bucuresti Nord Nr.10, Voluntari','MediaGalaxy','Media Galaxy'),
-('eMag Romania','contatct@emag.ro','0212005200','Cladirea Platinia, Calea Dorobantilor 33, Cluj-Napoca','Emag','Emag');
-
+('eMag Romania','contatct@emag.ro','0212005200','Cladirea Platinia, Calea Dorobantilor 33, Cluj-Napoca','Emag','Emag'),
+('Direct Client Services','carturesti@emag.ro','0728828907','Bucuresti, Setor 1, Str. Edgar Quinet, Nr. 9','Carturesti','Carturesti'),
+('Auto Scan','autoscan@emag.ro','0722349934','Strada Bucuresti, nr 55B, Cluj Napoca','Autoscan','Autoscan');
 ----Vanzatori
 
 INSERT INTO Vanzatori(UserId,NumeCompanie, Cont,CUI)
@@ -35,7 +36,9 @@ VALUES(18,'Altex','RO35INGB0000977903208992','RO17369785'),
 (20,'Media Galaxy','RO39INGB0011899905206872','RO17224152'),
 (16,'ForIT','RO07INGB0000999905206872','RO17116469'),
 (21,'eMag','RO13INGB00009999773206872','RO11266469'),
-(17,'Flanco','RO13INGB000099997732448521','RO27698631');
+(17,'Flanco','RO13INGB000099997732448521','RO27698631'),
+(22,'Carturesti','RO51BUCU127302372511RO01','RO11648548'),
+(23,'Autoscan','RO37BRDE040SV65263450400','RO32189995');
 
 
 -----Admini
@@ -48,13 +51,34 @@ VALUES(1),
 ----De introdus:
 
 ----Branduri
-
+INSERT INTO Branduri(NumeBrand)
+VALUES('Lenovo'),
+('HP'),
+('Asus'),
+('Dell'),
+('Acer'),
+('Apple'),
+('MSI'),
+('Toshiba'),
+('Microsoft'),
+('Samsung'),
+('Huawei'),
+('Xiomi'),('Sony'),('LG'),('Allview'),('Nokia'),('HTC'),('Google'),('Oneplus'),('Intel'),('AMD'),('Kingstone'),
+('Gigabyte'),('Sapphire'),('Corsair'),('HyperX'),('Michelin'),('Continental'),('Pirelli'),('Rao'),('Litera'),('Nike'),('Adidas'),('Jack & Jones'),('Puma');
 
 
 
 ---- Categorii Produse
 
-
-
+INSERT INTO CategoriiProduse(NumeCategorie)
+VALUES('Laptopuri'),
+('Tablete'),
+('Telefoane'),
+('PC & Periferice'),
+('TV, Audio-Video & Foto'),
+('Gaming'),
+('Haine'),
+('Carti'),
+('Auto & Moto');
 
 ---- Produse
