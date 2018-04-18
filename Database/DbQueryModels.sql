@@ -30,8 +30,7 @@ CREATE TABLE Vanzatori(
 --Admini
 CREATE TABLE Admins(
     AdminId INT IDENTITY(1,1) PRIMARY KEY,
-    UserId INT FOREIGN KEY REFERENCES Users(UserId), -- Mai trebuie UserId??
-    VanzatorId INT FOREIGN KEY REFERENCES Vanzatori(VanzatorId)
+    UserId INT FOREIGN KEY REFERENCES Users(UserId)
 
 );
 
