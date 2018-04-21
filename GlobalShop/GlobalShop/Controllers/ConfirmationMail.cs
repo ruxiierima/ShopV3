@@ -15,20 +15,23 @@ namespace GlobalShop.Controllers
             try
             {
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 25);
+                client.UseDefaultCredentials = false;
                 NetworkCredential credential = new NetworkCredential("cutemdown12@gmail.com", "Laborator2");
                 MailMessage mailMessage = new MailMessage();
+                client.Credentials = credential;
+
                 mailMessage.From = new MailAddress("cutemdown12@gmail.com");
                 mailMessage.To.Add(email);
                 mailMessage.Subject = "Cont creat cu succes";
                 mailMessage.Body = "Bine ai venit în universul GLOBAL SHOP!\n Iti multumim ca ai apelat la serviciile noastre. ";
-                client.Credentials = credential;
                 client.EnableSsl = true;
                 client.Send(mailMessage);
 
 
             }
-            catch
+            catch(Exception ex)
             {
+                Console.WriteLine(ex.Message);
             }
         }
     }
