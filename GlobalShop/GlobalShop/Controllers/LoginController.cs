@@ -16,9 +16,18 @@ namespace GlobalShop.Controllers
             {
                 if (user.Email == email)
                 {
-                    Console.WriteLine("------------OK------------");
                     return true;
                 }
+            }
+            return false;
+
+        }
+        public static bool CheckPass(string email,string password)
+        {
+            User user = UserController.GetUser(email);
+            if (user.Parola == password)
+            {
+                return true;
             }
             return false;
 

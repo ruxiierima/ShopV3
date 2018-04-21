@@ -25,7 +25,12 @@ namespace GlobalShop
         private void continua_Click(object sender, EventArgs e)
         {
             emailAdress = email.Text;
-            LoginController.Login(emailAdress);
+            if (LoginController.Login(emailAdress) == true)
+            {
+                Log log = new Log(emailAdress);
+                log.Show();
+
+            }
             
 
             
