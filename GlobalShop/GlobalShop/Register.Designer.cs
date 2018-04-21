@@ -42,7 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.nickname = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -207,15 +206,6 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Alege un nickname";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 11);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "label7";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -235,7 +225,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 501);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.nickname);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.passconfirmation);
@@ -275,7 +264,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox nickname;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
     }
 }
