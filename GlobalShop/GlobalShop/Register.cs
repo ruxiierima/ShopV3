@@ -43,7 +43,7 @@ namespace GlobalShop
                 try
                 {
                     RegisterController.Register(name, email, tel, adr, passwrd, nick);
-                    Console.WriteLine("USER CREATED");
+                    ConfirmationMail.SendEmail(email);
                 }
                 catch
                 {

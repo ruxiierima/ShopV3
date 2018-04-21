@@ -63,6 +63,7 @@
     <Compile Include="CategoriiProduse.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ConfirmationMail.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -83,6 +84,12 @@
     </Compile>
     <Compile Include="Log.Designer.cs">
       <DependentUpon>Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazin.Designer.cs">
+      <DependentUpon>Magazin.cs</DependentUpon>
     </Compile>
     <Compile Include="Produse.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
@@ -121,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Log.resx">
       <DependentUpon>Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazin.resx">
+      <DependentUpon>Magazin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
