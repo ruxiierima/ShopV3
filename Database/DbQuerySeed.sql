@@ -82,3 +82,7 @@ VALUES('Laptopuri'),
 ('Auto & Moto');
 
 ---- Produse
+
+
+INSERT INTO Produse(VanzatorId,BrandId,CategorieId,NumeProdus,Pret, Stoc, Caracteristici)
+VALUES(1,5,1,'Laptop Acer Aspire A515-41G-F2SH','2199.99',13,'MD Quad-Core FX 7th Gen 9800P 2.70 GHz, 15.6", Full HD, 8GB, 256GB SSD, AMD Radeon™ RX 540 2GB, Linux, Black')
