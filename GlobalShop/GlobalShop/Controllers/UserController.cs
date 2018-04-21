@@ -20,10 +20,13 @@ namespace GlobalShop.Controllers
         {
             return shop.Users.SingleOrDefault(u => u.Email == email);
         }
-        public void Create(User user)
+        public static void Create(User user)
         {
             shop.Users.Add(user);
+            shop.SaveChanges();
 
         }
+
+        
     }
 }

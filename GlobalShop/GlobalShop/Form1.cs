@@ -25,15 +25,39 @@ namespace GlobalShop
         private void continua_Click(object sender, EventArgs e)
         {
             emailAdress = email.Text;
-            if (LoginController.Login(emailAdress) == true)
+            if (LoginController.IsValidEmail(emailAdress) == true)
             {
-                Log log = new Log(emailAdress);
-                log.Show();
+                if (LoginController.Login(emailAdress) == true)
+                {
+                    Log log = new Log(emailAdress);
+                    log.Show();
 
+                }
+                else
+                {
+                    Register register = new Register(emailAdress);
+                    register.Show();
+                }
             }
+            else
+            {
+                MessageBox.Show("Adresa de email este invalida", "Eroare",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                email.Clear();
+            }
+
             
 
             
+        }
+
+        private void email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

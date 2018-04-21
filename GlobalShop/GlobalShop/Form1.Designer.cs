@@ -58,6 +58,7 @@
             this.label2.Size = new System.Drawing.Size(224, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Introdu adresa de email";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // email
             // 
@@ -71,6 +72,7 @@
             this.email.Size = new System.Drawing.Size(302, 29);
             this.email.TabIndex = 2;
             this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
             // 
             // continua
             // 
