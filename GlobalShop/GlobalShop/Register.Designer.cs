@@ -50,7 +50,7 @@
             this.continua.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.continua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.continua.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continua.Location = new System.Drawing.Point(54, 438);
+            this.continua.Location = new System.Drawing.Point(54, 451);
             this.continua.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.continua.Name = "continua";
             this.continua.Size = new System.Drawing.Size(302, 37);
@@ -64,7 +64,7 @@
             this.nume.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.nume.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nume.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nume.Location = new System.Drawing.Point(54, 81);
+            this.nume.Location = new System.Drawing.Point(54, 94);
             this.nume.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.nume.MaxLength = 255;
             this.nume.Name = "nume";
@@ -76,7 +76,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(108, 59);
+            this.label2.Location = new System.Drawing.Point(108, 72);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 19);
@@ -88,7 +88,7 @@
             this.numar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.numar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numar.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numar.Location = new System.Drawing.Point(54, 143);
+            this.numar.Location = new System.Drawing.Point(54, 156);
             this.numar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.numar.MaxLength = 10;
             this.numar.Name = "numar";
@@ -101,7 +101,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(108, 121);
+            this.label1.Location = new System.Drawing.Point(108, 134);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 19);
@@ -113,7 +113,7 @@
             this.adresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.adresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.adresa.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adresa.Location = new System.Drawing.Point(54, 266);
+            this.adresa.Location = new System.Drawing.Point(54, 279);
             this.adresa.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.adresa.MaxLength = 255;
             this.adresa.Name = "adresa";
@@ -125,7 +125,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(149, 244);
+            this.label3.Location = new System.Drawing.Point(149, 257);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 19);
@@ -137,7 +137,7 @@
             this.pass.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pass.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass.Location = new System.Drawing.Point(54, 325);
+            this.pass.Location = new System.Drawing.Point(54, 338);
             this.pass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pass.MaxLength = 255;
             this.pass.Name = "pass";
@@ -150,7 +150,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(149, 303);
+            this.label4.Location = new System.Drawing.Point(149, 316);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 19);
@@ -162,7 +162,7 @@
             this.passconfirmation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.passconfirmation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passconfirmation.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passconfirmation.Location = new System.Drawing.Point(54, 387);
+            this.passconfirmation.Location = new System.Drawing.Point(54, 400);
             this.passconfirmation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.passconfirmation.MaxLength = 255;
             this.passconfirmation.Name = "passconfirmation";
@@ -175,7 +175,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(149, 365);
+            this.label5.Location = new System.Drawing.Point(149, 378);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 19);
@@ -187,7 +187,7 @@
             this.nickname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.nickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nickname.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nickname.Location = new System.Drawing.Point(54, 202);
+            this.nickname.Location = new System.Drawing.Point(54, 215);
             this.nickname.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.nickname.MaxLength = 255;
             this.nickname.Name = "nickname";
@@ -199,7 +199,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(138, 180);
+            this.label6.Location = new System.Drawing.Point(138, 193);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 19);
@@ -211,7 +211,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Champagne & Limousines", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(37, 491);
+            this.label8.Location = new System.Drawing.Point(37, 504);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(348, 24);
             this.label8.TabIndex = 17;
@@ -223,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 11F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 545);
+            this.ClientSize = new System.Drawing.Size(416, 566);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.nickname);
             this.Controls.Add(this.label6);
@@ -242,6 +242,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Register";
+            this.Resizable = false;
             this.Text = "Global Shop";
             this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
