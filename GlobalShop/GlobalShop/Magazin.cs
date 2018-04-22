@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,16 @@ using System.Windows.Forms;
 
 namespace GlobalShop
 {
-    public partial class Magazin : Form
+    public partial class Magazin : MetroForm
     {
         public Magazin()
         {
             InitializeComponent();
+        }
+
+        private void Magazin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GlobalShop.Controllers;
+using MetroFramework.Forms;
 
 namespace GlobalShop
 {
-    public partial class Log : Form
+    public partial class Log : MetroForm
     {
          private string email;
         public Log(string email)
@@ -24,8 +25,13 @@ namespace GlobalShop
         {
             if (LoginController.CheckPass(email, parola.Text))
             {
-                Console.WriteLine("---------OKKKK---------");
+                Magazin magazin = new Magazin();
             }
+
+        }
+
+        private void Log_Load(object sender, EventArgs e)
+        {
 
         }
     }
