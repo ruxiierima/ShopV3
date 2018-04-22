@@ -19,6 +19,8 @@ namespace GlobalShop
         {
             InitializeComponent();
             ShopEntities shop = new ShopEntities();
+            Magazin magazin = new Magazin();
+            magazin.Show();
 
             
         }

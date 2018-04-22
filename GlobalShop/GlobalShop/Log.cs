@@ -25,8 +25,11 @@ namespace GlobalShop
         {
             if (LoginController.CheckPass(email, parola.Text)==true)
             {
-                Magazin magazin = new Magazin();
+                User user = new User();
+                user = UserController.GetUser(email);
+                Magazin magazin = new Magazin(user);
                 magazin.Show();
+                this.Close();
             }
             else
             {

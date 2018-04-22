@@ -10,10 +10,6 @@ namespace GlobalShop.Controllers
     public class UserController 
     {
         private static ShopEntities shop = new ShopEntities();
-        public UserController()
-        {
-            
-        }
         public static IEnumerable<User> GetUsers() => shop.Users.ToList();
 
         public static User GetUser(string email)
