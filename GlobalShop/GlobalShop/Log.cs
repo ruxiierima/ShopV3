@@ -23,9 +23,14 @@ namespace GlobalShop
 
         private void continua_Click(object sender, EventArgs e)
         {
-            if (LoginController.CheckPass(email, parola.Text))
+            if (LoginController.CheckPass(email, parola.Text)==true)
             {
                 Magazin magazin = new Magazin();
+                magazin.Show();
+            }
+            else
+            {
+                MessageBox.Show("Parola nu este corecta", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

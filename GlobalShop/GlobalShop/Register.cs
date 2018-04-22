@@ -45,11 +45,13 @@ namespace GlobalShop
                 {
                     RegisterController.Register(name, email, tel, adr, passwrd, nick);
                     Magazin magazin = new Magazin();
-                    ConfirmationMail.SendEmail(email);
+                    magazin.Show();
+                    this.Close();
+                    ConfirmationMail.SendEmail(email,nick);
                 }
                 catch
                 {
-                    Console.WriteLine("EROARE");
+                    MessageBox.Show("A aparut o eroare", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
