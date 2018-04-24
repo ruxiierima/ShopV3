@@ -75,6 +75,7 @@
     <Compile Include="Controllers\ConfirmationMail.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\Products\ProduseController.cs" />
+    <Compile Include="Controllers\Products\RandomProducts.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Cumparare.cs">
@@ -193,6 +194,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controllers\Admin\" />
+    <Folder Include="Controllers\Seller\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

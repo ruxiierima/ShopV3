@@ -19,15 +19,12 @@ namespace GlobalShop.Controllers
                 NetworkCredential credential = new NetworkCredential("globalshopro@gmail.com", "globalshop1234");
                 MailMessage mailMessage = new MailMessage();
                 client.Credentials = credential;
-
                 mailMessage.From = new MailAddress("globalshopro@gmail.com");
                 mailMessage.To.Add(email);
                 mailMessage.Subject = "Cont creat cu succes";
                 mailMessage.Body = "Bine ai venit în universul GLOBAL SHOP, "+nickname+"\n Iti multumim ca ai apelat la serviciile noastre. ";
                 client.EnableSsl = true;
                 client.Send(mailMessage);
-
-
             }
             catch(Exception ex)
             {

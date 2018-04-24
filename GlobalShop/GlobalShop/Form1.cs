@@ -21,8 +21,6 @@ namespace GlobalShop
             ShopEntities shop = new ShopEntities();
             Magazin magazin = new Magazin();
             magazin.Show();
-
-            
         }
 
         private void continua_Click(object sender, EventArgs e)
@@ -34,7 +32,6 @@ namespace GlobalShop
                 {
                     Log log = new Log(emailAdress);
                     log.Show();
-
                 }
                 else
                 {
