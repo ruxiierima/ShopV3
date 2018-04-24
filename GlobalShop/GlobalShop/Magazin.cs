@@ -63,7 +63,7 @@ namespace GlobalShop
             for (int i = 0; i < 8; i++)
             {
                 smallLabels[i].Text = produses[i].NumeProdus;
-                bigLabels[i].Text = produses[i].Pret.ToString();
+                bigLabels[i].Text = produses[i].Pret.ToString()+" Lei";
 
             }
 
@@ -74,6 +74,25 @@ namespace GlobalShop
         {
             panel4.Visible=true;
             panel2.Visible = false;
+            DateTime tomorrow = DateTime.Now.AddDays(1);
+            label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            label24.Text = produses[0].NumeProdus;
+            pret.Text = produses[0].Pret.ToString()+" Lei";
+
+            if (CheckStoc.Check(produses[0]) == true)
+            {
+                label12.Text = "In Stoc";
+                label12.BackColor = Color.Green;
+            }
+            else if (CheckStoc.Check(produses[0]) == false)
+            {
+                label12.Text = "Stoc epuizat";
+                label12.BackColor = Color.Red;
+
+            }
+            label21.Text = produses[0].Caracteristici;
 
         }
 
