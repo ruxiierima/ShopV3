@@ -15,7 +15,7 @@ namespace GlobalShop.Controllers
             {
                 UserController.Create(user);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 Console.WriteLine("ERROR");
             }
