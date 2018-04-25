@@ -1,4 +1,9 @@
-﻿namespace GlobalShop
+﻿using GlobalShop.Controllers.Products;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace GlobalShop
 {
     partial class Magazin
     {
@@ -73,23 +78,23 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pret = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button20 = new System.Windows.Forms.Button();
+            this.pret = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -459,7 +464,7 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button15.Location = new System.Drawing.Point(795, 548);
+            this.button15.Location = new System.Drawing.Point(97, 548);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(150, 23);
             this.button15.TabIndex = 32;
@@ -472,7 +477,7 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button16.Location = new System.Drawing.Point(565, 548);
+            this.button16.Location = new System.Drawing.Point(330, 549);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(150, 23);
             this.button16.TabIndex = 31;
@@ -485,7 +490,7 @@
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button17.Location = new System.Drawing.Point(330, 548);
+            this.button17.Location = new System.Drawing.Point(564, 546);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(150, 23);
             this.button17.TabIndex = 30;
@@ -498,7 +503,7 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button18.Location = new System.Drawing.Point(98, 548);
+            this.button18.Location = new System.Drawing.Point(794, 549);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(150, 23);
             this.button18.TabIndex = 29;
@@ -588,7 +593,6 @@
             this.button11.TabIndex = 13;
             this.button11.Text = "Vezi detalii";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label3
             // 
@@ -632,22 +636,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Champagne & Limousines", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(307, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(727, 28);
-            this.comboBox1.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.comboBox2);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.metroButton1);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Location = new System.Drawing.Point(270, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1051, 101);
@@ -688,7 +683,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(37, 42);
+            this.textBox1.Location = new System.Drawing.Point(307, 727);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(556, 41);
             this.textBox1.TabIndex = 0;
@@ -710,47 +705,57 @@
             this.panel4.Size = new System.Drawing.Size(1051, 551);
             this.panel4.TabIndex = 4;
             // 
-            // button19
+            // label24
             // 
-            this.button19.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.Red;
-            this.button19.Location = new System.Drawing.Point(55, 504);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(104, 25);
-            this.button19.TabIndex = 0;
-            this.button19.Text = "Intoarce-te";
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Champagne & Limousines", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(158, 27);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(124, 37);
+            this.label24.TabIndex = 9;
+            this.label24.Text = "label24";
             // 
-            // pictureBox9
+            // label23
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(58, 90);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(348, 385);
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Green;
+            this.label23.Location = new System.Drawing.Point(482, 342);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(443, 24);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "Livrare standard: Ajunge in data de 26.04.2018";
             // 
-            // label11
+            // label22
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 11);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "label11";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(482, 290);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(157, 24);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "Vandut de: Altex";
             // 
-            // pret
+            // label21
             // 
-            this.pret.AutoSize = true;
-            this.pret.Font = new System.Drawing.Font("Champagne & Limousines", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pret.ForeColor = System.Drawing.Color.Red;
-            this.pret.Location = new System.Drawing.Point(480, 141);
-            this.pret.Name = "pret";
-            this.pret.Size = new System.Drawing.Size(123, 36);
-            this.pret.TabIndex = 3;
-            this.pret.Text = "700 Lei";
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(482, 397);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(130, 24);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Caracteristici";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Maroon;
+            this.label12.Font = new System.Drawing.Font("Champagne & Limousines", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(486, 186);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 26);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "In Stoc";
             // 
             // button20
             // 
@@ -765,68 +770,72 @@
             this.button20.Text = "Adauga in cos";
             this.button20.UseVisualStyleBackColor = false;
             // 
-            // label12
+            // pret
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Maroon;
-            this.label12.Font = new System.Drawing.Font("Champagne & Limousines", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(486, 186);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 26);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "In Stoc";
+            this.pret.AutoSize = true;
+            this.pret.Font = new System.Drawing.Font("Champagne & Limousines", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pret.ForeColor = System.Drawing.Color.Red;
+            this.pret.Location = new System.Drawing.Point(480, 141);
+            this.pret.Name = "pret";
+            this.pret.Size = new System.Drawing.Size(123, 36);
+            this.pret.TabIndex = 3;
+            this.pret.Text = "700 Lei";
             // 
-            // label21
+            // label11
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(482, 397);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(130, 24);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Caracteristici";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 11);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "label11";
             // 
-            // label22
+            // pictureBox9
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(482, 290);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(157, 24);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Vandut de: Altex";
+            this.pictureBox9.Location = new System.Drawing.Point(58, 90);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(348, 385);
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
             // 
-            // label23
+            // button19
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Green;
-            this.label23.Location = new System.Drawing.Point(482, 342);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(443, 24);
-            this.label23.TabIndex = 8;
-            this.label23.Text = "Livrare standard: Ajunge in data de 26.04.2018";
+            this.button19.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button19.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.Red;
+            this.button19.Location = new System.Drawing.Point(55, 504);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(104, 25);
+            this.button19.TabIndex = 0;
+            this.button19.Text = "Intoarce-te";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
-            // label24
+            // comboBox2
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Champagne & Limousines", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(158, 27);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(124, 37);
-            this.label24.TabIndex = 9;
-            this.label24.Text = "label24";
+            this.comboBox2.DropDownHeight = 500;
+            this.comboBox2.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.Location = new System.Drawing.Point(38, 45);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(555, 37);
+            this.comboBox2.TabIndex = 48;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBox2.TextUpdate += new System.EventHandler(this.comboBox2_TextUpdate);
+            this.comboBox2.Click += new System.EventHandler(this.comboBox2_TextUpdate);
             // 
             // Magazin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1363, 774);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.panel4);
             this.Font = new System.Drawing.Font("Champagne & Limousines", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -851,8 +860,11 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
+
+      
 
         #endregion
 
@@ -873,7 +885,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -917,5 +928,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
+        private ComboBox comboBox2;
     }
 }
