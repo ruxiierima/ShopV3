@@ -21,7 +21,7 @@ namespace GlobalShop
         }
     
         public int CategorieId { get; set; }
-        public string NumeCategorie { get; set; }
+        public  string NumeCategorie { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Produse> Produses { get; set; }

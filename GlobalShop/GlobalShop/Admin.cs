@@ -18,5 +18,7 @@ namespace GlobalShop
         public Nullable<int> UserId { get; set; }
     
         public virtual User User { get; set; }
+
+        
     }
 }

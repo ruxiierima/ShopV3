@@ -26,5 +26,6 @@ namespace GlobalShop
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CumparareItem> CumparareItems { get; set; }
         public virtual User User { get; set; }
+        public virtual Produse Produse { get; set; }
     }
 }

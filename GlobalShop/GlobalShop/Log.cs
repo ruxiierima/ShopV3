@@ -42,5 +42,10 @@ namespace GlobalShop
         {
 
         }
+
+        private void parola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

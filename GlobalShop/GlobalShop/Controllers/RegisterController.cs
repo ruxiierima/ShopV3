@@ -11,6 +11,7 @@ namespace GlobalShop.Controllers
         public static void Register(string Nume, string Email, string Phone, string Adress, string Password, string Nickname)
         {
             User user = new User(Nume, Email, Phone, Adress, Password, Nickname);
+            
             try
             {
                 UserController.Create(user);

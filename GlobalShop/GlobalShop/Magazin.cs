@@ -23,26 +23,26 @@ namespace GlobalShop
             this.user = user;
         }
         public Magazin()
-        {
+        {   /*
             InitializeComponent();
-            pictureBox1.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.Image = Image.FromFile("C:\\Users\\Chiorean Dan\\Desktop\\Poze produse\\acer.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\ierima\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
 
-
+*/
         }
 
         private void Magazin_Load(object sender, EventArgs e)
@@ -179,6 +179,12 @@ namespace GlobalShop
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            AddProducts product = new AddProducts();
+            product.Show();
         }
     }
 }
