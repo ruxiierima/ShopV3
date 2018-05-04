@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GlobalShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="AdminId" />
+    </Key>
+    <Property Name="AdminId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Admins__UserId__3C69FB99" FromRole="Admins" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Branduri">
+    <Key>
+      <PropertyRef Name="BrandId" />
+    </Key>
+    <Property Name="BrandId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeBrand" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Produses" Relationship="Self.FK__Produse__BrandId__440B1D61" FromRole="Branduri" ToRole="Produse" />
+  </EntityType>
+  <EntityType Name="CategoriiProduse">
+    <Key>
+      <PropertyRef Name="CategorieId" />
+    </Key>
+    <Property Name="CategorieId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeCategorie" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Produses" Relationship="Self.FK__Produse__Categor__44FF419A" FromRole="CategoriiProduse" ToRole="Produse" />
+  </EntityType>
+  <EntityType Name="Cumparare">
+    <Key>
+      <PropertyRef Name="CumparareId" />
+    </Key>
+    <Property Name="CumparareId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <NavigationProperty Name="CumparareItems" Relationship="Self.FK__Cumparare__Cumpa__4AB81AF0" FromRole="Cumparare" ToRole="CumparareItem" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Cumparare__UserI__47DBAE45" FromRole="Cumparare" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="CumparareItem">
+    <Key>
+      <PropertyRef Name="CumparareId" />
+      <PropertyRef Name="ProdusId" />
+    </Key>
+    <Property Name="CumparareId" Type="Int32" Nullable="false" />
+    <Property Name="ProdusId" Type="Int32" Nullable="false" />
+    <Property Name="NumarIteme" Type="Int32" />
+    <NavigationProperty Name="Cumparare" Relationship="Self.FK__Cumparare__Cumpa__4AB81AF0" FromRole="CumparareItem" ToRole="Cumparare" />
+    <NavigationProperty Name="Produse" Relationship="Self.FK__Cumparare__Produ__4BAC3F29" FromRole="CumparareItem" ToRole="Produse" />
+  </EntityType>
+  <EntityType Name="Produse">
+    <Key>
+      <PropertyRef Name="ProdusId" />
+    </Key>
+    <Property Name="ProdusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VanzatorId" Type="Int32" />
+    <Property Name="BrandId" Type="Int32" />
+    <Property Name="CategorieId" Type="Int32" />
+    <Property Name="NumeProdus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pret" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Stoc" Type="Int32" Nullable="false" />
+    <Property Name="Caracteristici" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Imagine" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Branduri" Relationship="Self.FK__Produse__BrandId__440B1D61" FromRole="Produse" ToRole="Branduri" />
+    <NavigationProperty Name="CategoriiProduse" Relationship="Self.FK__Produse__Categor__44FF419A" FromRole="Produse" ToRole="CategoriiProduse" />
+    <NavigationProperty Name="CumparareItems" Relationship="Self.FK__Cumparare__Produ__4BAC3F29" FromRole="Produse" ToRole="CumparareItem" />
+    <NavigationProperty Name="Vanzatori" Relationship="Self.FK__Produse__Vanzato__4316F928" FromRole="Produse" ToRole="Vanzatori" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumePrenume" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefon" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Adresa" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Parola" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nickname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Admins" Relationship="Self.FK__Admins__UserId__3C69FB99" FromRole="Users" ToRole="Admins" />
+    <NavigationProperty Name="Cumparares" Relationship="Self.FK__Cumparare__UserI__47DBAE45" FromRole="Users" ToRole="Cumparare" />
+    <NavigationProperty Name="Vanzatoris" Relationship="Self.FK__Vanzatori__UserI__398D8EEE" FromRole="Users" ToRole="Vanzatori" />
+  </EntityType>
+  <EntityType Name="Vanzatori">
+    <Key>
+      <PropertyRef Name="VanzatorId" />
+    </Key>
+    <Property Name="VanzatorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="NumeCompanie" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cont" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUI" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Produses" Relationship="Self.FK__Produse__Vanzato__4316F928" FromRole="Vanzatori" ToRole="Produse" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Vanzatori__UserI__398D8EEE" FromRole="Vanzatori" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK__Admins__UserId__3C69FB99">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Admins" Type="Self.Admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Admins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__BrandId__440B1D61">
+    <End Role="Branduri" Type="Self.Branduri" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branduri">
+        <PropertyRef Name="BrandId" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="BrandId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__Categor__44FF419A">
+    <End Role="CategoriiProduse" Type="Self.CategoriiProduse" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriiProduse">
+        <PropertyRef Name="CategorieId" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="CategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cumparare__Cumpa__4AB81AF0">
+    <End Role="Cumparare" Type="Self.Cumparare" Multiplicity="1" />
+    <End Role="CumparareItem" Type="Self.CumparareItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cumparare">
+        <PropertyRef Name="CumparareId" />
+      </Principal>
+      <Dependent Role="CumparareItem">
+        <PropertyRef Name="CumparareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cumparare__UserI__47DBAE45">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Cumparare" Type="Self.Cumparare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Cumparare">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cumparare__Produ__4BAC3F29">
+    <End Role="Produse" Type="Self.Produse" Multiplicity="1" />
+    <End Role="CumparareItem" Type="Self.CumparareItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produse">
+        <PropertyRef Name="ProdusId" />
+      </Principal>
+      <Dependent Role="CumparareItem">
+        <PropertyRef Name="ProdusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__Vanzato__4316F928">
+    <End Role="Vanzatori" Type="Self.Vanzatori" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vanzatori">
+        <PropertyRef Name="VanzatorId" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="VanzatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vanzatori__UserI__398D8EEE">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Vanzatori" Type="Self.Vanzatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Vanzatori">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShopEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Branduris" EntityType="Self.Branduri" />
+    <EntitySet Name="CategoriiProduses" EntityType="Self.CategoriiProduse" />
+    <EntitySet Name="Cumparares" EntityType="Self.Cumparare" />
+    <EntitySet Name="CumparareItems" EntityType="Self.CumparareItem" />
+    <EntitySet Name="Produses" EntityType="Self.Produse" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Vanzatoris" EntityType="Self.Vanzatori" />
+    <AssociationSet Name="FK__Admins__UserId__3C69FB99" Association="Self.FK__Admins__UserId__3C69FB99">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Admins" EntitySet="Admins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__BrandId__440B1D61" Association="Self.FK__Produse__BrandId__440B1D61">
+      <End Role="Branduri" EntitySet="Branduris" />
+      <End Role="Produse" EntitySet="Produses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__Categor__44FF419A" Association="Self.FK__Produse__Categor__44FF419A">
+      <End Role="CategoriiProduse" EntitySet="CategoriiProduses" />
+      <End Role="Produse" EntitySet="Produses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cumparare__Cumpa__4AB81AF0" Association="Self.FK__Cumparare__Cumpa__4AB81AF0">
+      <End Role="Cumparare" EntitySet="Cumparares" />
+      <End Role="CumparareItem" EntitySet="CumparareItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cumparare__UserI__47DBAE45" Association="Self.FK__Cumparare__UserI__47DBAE45">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Cumparare" EntitySet="Cumparares" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cumparare__Produ__4BAC3F29" Association="Self.FK__Cumparare__Produ__4BAC3F29">
+      <End Role="Produse" EntitySet="Produses" />
+      <End Role="CumparareItem" EntitySet="CumparareItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__Vanzato__4316F928" Association="Self.FK__Produse__Vanzato__4316F928">
+      <End Role="Vanzatori" EntitySet="Vanzatoris" />
+      <End Role="Produse" EntitySet="Produses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vanzatori__UserI__398D8EEE" Association="Self.FK__Vanzatori__UserI__398D8EEE">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Vanzatori" EntitySet="Vanzatoris" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

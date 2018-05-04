@@ -186,5 +186,11 @@ namespace GlobalShop
             AddProducts product = new AddProducts();
             product.Show();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            AdministrationShop administration = new AdministrationShop();
+            administration.Show();
+        }
     }
 }

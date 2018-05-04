@@ -1,0 +1,45 @@
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\GlobalShop.exe.config
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\GlobalShop.exe
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\GlobalShop.pdb
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.dll
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\MetroFramework.Design.dll
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\MetroFramework.dll
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.xml
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csprojResolveAssemblyReference.cache
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Form1.resources
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Log.resources
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Magazin.resources
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Properties.Resources.resources
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Register.resources
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csproj.GenerateResource.cache
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csproj.CoreCompileInputs.cache
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csproj.CopyComplete
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.exe
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.pdb
+C:\Users\ierima\Desktop\proiect ii\ShopV3-master\GlobalShop\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.AddProducts.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\GlobalShop.exe.config
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\GlobalShop.exe
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\GlobalShop.pdb
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.dll
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\MetroFramework.Design.dll
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\MetroFramework.dll
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.xml
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csprojResolveAssemblyReference.cache
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.AddProducts.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Form1.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Log.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Magazin.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Properties.Resources.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.Register.resources
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csproj.GenerateResource.cache
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csproj.CoreCompileInputs.cache
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.csproj.CopyComplete
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.exe
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.pdb
+C:\Users\ierima\Desktop\ProiectDan\ShopV3\GlobalShop\GlobalShop\obj\Debug\GlobalShop.AdministrationShop.resources

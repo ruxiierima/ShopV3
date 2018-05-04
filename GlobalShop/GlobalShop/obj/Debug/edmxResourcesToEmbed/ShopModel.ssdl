@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GlobalShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="AdminId" />
+    </Key>
+    <Property Name="AdminId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+  </EntityType>
+  <EntityType Name="Branduri">
+    <Key>
+      <PropertyRef Name="BrandId" />
+    </Key>
+    <Property Name="BrandId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeBrand" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoriiProduse">
+    <Key>
+      <PropertyRef Name="CategorieId" />
+    </Key>
+    <Property Name="CategorieId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeCategorie" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cumparare">
+    <Key>
+      <PropertyRef Name="CumparareId" />
+    </Key>
+    <Property Name="CumparareId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+  </EntityType>
+  <EntityType Name="CumparareItem">
+    <Key>
+      <PropertyRef Name="CumparareId" />
+      <PropertyRef Name="ProdusId" />
+    </Key>
+    <Property Name="CumparareId" Type="int" Nullable="false" />
+    <Property Name="ProdusId" Type="int" Nullable="false" />
+    <Property Name="NumarIteme" Type="int" />
+  </EntityType>
+  <EntityType Name="Produse">
+    <Key>
+      <PropertyRef Name="ProdusId" />
+    </Key>
+    <Property Name="ProdusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VanzatorId" Type="int" />
+    <Property Name="BrandId" Type="int" />
+    <Property Name="CategorieId" Type="int" />
+    <Property Name="NumeProdus" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Pret" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Stoc" Type="int" Nullable="false" />
+    <Property Name="Caracteristici" Type="text" Nullable="false" />
+    <Property Name="Imagine" Type="image" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumePrenume" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Telefon" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Adresa" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Parola" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Nickname" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Vanzatori">
+    <Key>
+      <PropertyRef Name="VanzatorId" />
+    </Key>
+    <Property Name="VanzatorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="NumeCompanie" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Cont" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CUI" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Admins__UserId__3C69FB99">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Admins" Type="Self.Admins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Admins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cumparare__Cumpa__4AB81AF0">
+    <End Role="Cumparare" Type="Self.Cumparare" Multiplicity="1" />
+    <End Role="CumparareItem" Type="Self.CumparareItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cumparare">
+        <PropertyRef Name="CumparareId" />
+      </Principal>
+      <Dependent Role="CumparareItem">
+        <PropertyRef Name="CumparareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cumparare__Produ__4BAC3F29">
+    <End Role="Produse" Type="Self.Produse" Multiplicity="1" />
+    <End Role="CumparareItem" Type="Self.CumparareItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produse">
+        <PropertyRef Name="ProdusId" />
+      </Principal>
+      <Dependent Role="CumparareItem">
+        <PropertyRef Name="ProdusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cumparare__UserI__47DBAE45">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Cumparare" Type="Self.Cumparare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Cumparare">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__BrandId__440B1D61">
+    <End Role="Branduri" Type="Self.Branduri" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branduri">
+        <PropertyRef Name="BrandId" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="BrandId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__Categor__44FF419A">
+    <End Role="CategoriiProduse" Type="Self.CategoriiProduse" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriiProduse">
+        <PropertyRef Name="CategorieId" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="CategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__Vanzato__4316F928">
+    <End Role="Vanzatori" Type="Self.Vanzatori" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vanzatori">
+        <PropertyRef Name="VanzatorId" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="VanzatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vanzatori__UserI__398D8EEE">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Vanzatori" Type="Self.Vanzatori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Vanzatori">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GlobalShopModelStoreContainer">
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Branduri" EntityType="Self.Branduri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoriiProduse" EntityType="Self.CategoriiProduse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cumparare" EntityType="Self.Cumparare" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CumparareItem" EntityType="Self.CumparareItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Produse" EntityType="Self.Produse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vanzatori" EntityType="Self.Vanzatori" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Admins__UserId__3C69FB99" Association="Self.FK__Admins__UserId__3C69FB99">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Admins" EntitySet="Admins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cumparare__Cumpa__4AB81AF0" Association="Self.FK__Cumparare__Cumpa__4AB81AF0">
+      <End Role="Cumparare" EntitySet="Cumparare" />
+      <End Role="CumparareItem" EntitySet="CumparareItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cumparare__Produ__4BAC3F29" Association="Self.FK__Cumparare__Produ__4BAC3F29">
+      <End Role="Produse" EntitySet="Produse" />
+      <End Role="CumparareItem" EntitySet="CumparareItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cumparare__UserI__47DBAE45" Association="Self.FK__Cumparare__UserI__47DBAE45">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Cumparare" EntitySet="Cumparare" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__BrandId__440B1D61" Association="Self.FK__Produse__BrandId__440B1D61">
+      <End Role="Branduri" EntitySet="Branduri" />
+      <End Role="Produse" EntitySet="Produse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__Categor__44FF419A" Association="Self.FK__Produse__Categor__44FF419A">
+      <End Role="CategoriiProduse" EntitySet="CategoriiProduse" />
+      <End Role="Produse" EntitySet="Produse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__Vanzato__4316F928" Association="Self.FK__Produse__Vanzato__4316F928">
+      <End Role="Vanzatori" EntitySet="Vanzatori" />
+      <End Role="Produse" EntitySet="Produse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vanzatori__UserI__398D8EEE" Association="Self.FK__Vanzatori__UserI__398D8EEE">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Vanzatori" EntitySet="Vanzatori" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

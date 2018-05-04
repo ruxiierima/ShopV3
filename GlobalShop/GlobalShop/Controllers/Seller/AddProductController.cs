@@ -12,9 +12,9 @@ namespace GlobalShop.Controllers.Seller
     {
         private static ShopEntities shop = new ShopEntities();
         
-        public static void AddProduct(string Nume,decimal Pret,int Stoc,string Caracteristici, byte[] Imagine,int CategorieId)
+        public static void AddProduct(string Nume,decimal Pret,int Stoc,string Caracteristici, byte[] Imagine,int CategorieId,int BrandId)
         {
-            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine,CategorieId);
+            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine,CategorieId,BrandId);
             try
             {
                 AddProductController.CreateProduct(produs);
@@ -22,7 +22,7 @@ namespace GlobalShop.Controllers.Seller
                 
             }
             catch (Exception)
-            {
+           {
                 MessageBox.Show("A aparut o eroare", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -30,6 +30,7 @@ namespace GlobalShop.Controllers.Seller
         {
             shop.Produses.Add(produs);
             shop.SaveChanges();
+            
         }
        
     }

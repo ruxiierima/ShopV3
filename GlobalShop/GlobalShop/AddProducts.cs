@@ -28,9 +28,12 @@ namespace GlobalShop
             int stocProduse = int.Parse(stoc.Text);
             string caracteristici = textBox1.Text;
             int optiune = checkedListBox1.SelectedIndex;
+            int optiune1 = checkedListBox2.SelectedIndex;
             string CategorieProdus = checkedListBox1.GetItemText(optiune);
+            string BrandProdus = checkedListBox2.GetItemText(optiune1);
             byte[] imagine = imageToByteArray(pictureBox1.Image);
             int categorieId=0;
+            int branduriId = 0;
 
             try
             {
@@ -63,11 +66,49 @@ namespace GlobalShop
                     case "Auto si Moto":
                         categorieId = 9;
                         break;
-                    
+                         }
 
+                switch (BrandProdus)
+                {
+                    case "Apple":
+                        branduriId = 1;
+                        break;
+                    case "Lenovo":
+                        branduriId = 2;
+                        break;
+                    case "Dell":
+                        branduriId = 3;
+                        break;
+                    case "Samsung":
+                        branduriId = 4;
+                        break;
+                    case "Huawei":
+                        branduriId = 5;
+                        break;
+                    case "Sony":
+                        branduriId = 6;
+                        break;
+                    case "Xiaomi":
+                        branduriId = 7;
+                        break;
+                    case "LG":
+                        branduriId = 8;
+                        break;
+                    case "Allview":
+                        branduriId = 9;
+                        break;
+                    case "Assus":
+                        branduriId = 10;
+                        break;
+                    case "Hurricane":
+                        branduriId = 11;
+                        break;
+                    case "Toshiba":
+                        branduriId = 12;
+                        break;
                 }
 
-                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine,categorieId);
+                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine,categorieId,branduriId);
 
             }
             catch

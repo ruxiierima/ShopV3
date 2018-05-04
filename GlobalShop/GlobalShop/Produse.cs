@@ -20,7 +20,7 @@ namespace GlobalShop
         {
             this.CumparareItems = new HashSet<CumparareItem>();
         }
-        public Produse(string Nume, decimal PretProdus,int Stoc, string Caracteristici, byte[] imagine,int CategorieId)
+        public Produse(string Nume, decimal PretProdus,int Stoc, string Caracteristici, byte[] imagine,int CategorieId,int BrandId)
         {
             this.NumeProdus = Nume;
             this.Pret = PretProdus;
@@ -28,6 +28,8 @@ namespace GlobalShop
             this.Caracteristici = Caracteristici;
             this.Imagine = imagine;
             this.CategorieId = CategorieId;
+            this.BrandId = BrandId;
+            
         }
     
         public int ProdusId { get; set; }

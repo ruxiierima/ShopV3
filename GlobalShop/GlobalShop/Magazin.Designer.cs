@@ -35,6 +35,7 @@ namespace GlobalShop
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Magazin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button21 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -65,14 +66,23 @@ namespace GlobalShop
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -84,22 +94,11 @@ namespace GlobalShop
             this.button20 = new System.Windows.Forms.Button();
             this.pret = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button21 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -108,6 +107,8 @@ namespace GlobalShop
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +116,7 @@ namespace GlobalShop
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button22);
             this.panel1.Controls.Add(this.button21);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button8);
@@ -130,6 +132,16 @@ namespace GlobalShop
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(241, 658);
             this.panel1.TabIndex = 0;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(20, 133);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(147, 32);
+            this.button21.TabIndex = 10;
+            this.button21.Text = "Adauguare Produs Nou";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button7
             // 
@@ -512,6 +524,38 @@ namespace GlobalShop
             this.button18.Text = "Vezi detalii";
             this.button18.UseVisualStyleBackColor = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(795, 318);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(565, 318);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox6.TabIndex = 19;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(330, 318);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox7.TabIndex = 18;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(97, 318);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox8.TabIndex = 17;
+            this.pictureBox8.TabStop = false;
+            // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -574,6 +618,38 @@ namespace GlobalShop
             this.label3.TabIndex = 6;
             this.label3.Text = "label3";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(794, 26);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(564, 26);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(329, 26);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(96, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 155);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
@@ -609,6 +685,17 @@ namespace GlobalShop
             this.button10.TabIndex = 3;
             this.button10.Text = "Contul meu";
             this.button10.UseVisualStyleBackColor = true;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.SystemColors.Window;
+            this.metroButton1.BackgroundImage = global::GlobalShop.Properties.Resources.icons8_search_50;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton1.Location = new System.Drawing.Point(604, 42);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(55, 41);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.UseSelectable = true;
             // 
             // label1
             // 
@@ -731,6 +818,14 @@ namespace GlobalShop
             this.label11.TabIndex = 2;
             this.label11.Text = "label11";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(58, 90);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(348, 385);
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
             // button19
             // 
             this.button19.BackColor = System.Drawing.SystemColors.Highlight;
@@ -745,98 +840,15 @@ namespace GlobalShop
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
-            // metroButton1
+            // button22
             // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.Window;
-            this.metroButton1.BackgroundImage = global::GlobalShop.Properties.Resources.icons8_search_50;
-            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton1.Location = new System.Drawing.Point(604, 42);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(55, 41);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.UseSelectable = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(795, 318);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(565, 318);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(330, 318);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox7.TabIndex = 18;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(97, 318);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(794, 26);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(564, 26);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(329, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(96, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 155);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(58, 90);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(348, 385);
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(20, 133);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(147, 32);
-            this.button21.TabIndex = 10;
-            this.button21.Text = "Adauguare Produs Nou";
-            this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            this.button22.Location = new System.Drawing.Point(48, 582);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(121, 29);
+            this.button22.TabIndex = 11;
+            this.button22.Text = "pagina Admin";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // Magazin
             // 
@@ -858,10 +870,6 @@ namespace GlobalShop
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -870,6 +878,10 @@ namespace GlobalShop
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -942,5 +954,6 @@ namespace GlobalShop
         private System.Windows.Forms.Label label24;
         private ComboBox comboBox2;
         private Button button21;
+        private Button button22;
     }
 }
