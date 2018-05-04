@@ -8,17 +8,17 @@ using System.Windows.Forms;
 
 namespace GlobalShop.Controllers.Seller
 {
-    class AddProductController
+    internal class AddProductController
     {
         private static ShopEntities shop = new ShopEntities();
         
-        public static void AddProduct(string Nume,decimal Pret,int Stoc,string Caracteristici, byte[] Imagine)
+        public static void AddProduct(string Nume,decimal Pret,int Stoc,string Caracteristici, byte[] Imagine,int CategorieId)
         {
-            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine);
+            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine,CategorieId);
             try
             {
                 AddProductController.CreateProduct(produs);
-                MessageBox.Show("Produs adaugat cu succes","ADAUGAt", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Produs adaugat cu succes","ADAUGAT", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
             }
             catch (Exception)
@@ -29,7 +29,7 @@ namespace GlobalShop.Controllers.Seller
         public static void CreateProduct(Produse produs)
         {
             shop.Produses.Add(produs);
-           // shop.SaveChanges();
+            shop.SaveChanges();
         }
        
     }

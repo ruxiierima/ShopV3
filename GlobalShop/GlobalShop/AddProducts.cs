@@ -24,27 +24,56 @@ namespace GlobalShop
         private void button1_Click(object sender, EventArgs e)
         {
             string nume = ProductNameTextBox.Text;
-            decimal pret= Decimal.Parse(pretTExtBox.Text);
-            int stocProduse =int.Parse(stoc.Text);
+            decimal pret = Decimal.Parse(pretTExtBox.Text);
+            int stocProduse = int.Parse(stoc.Text);
             string caracteristici = textBox1.Text;
             int optiune = checkedListBox1.SelectedIndex;
             string CategorieProdus = checkedListBox1.GetItemText(optiune);
             byte[] imagine = imageToByteArray(pictureBox1.Image);
-            
+            int categorieId=0;
+
             try
             {
-               // for (string p: NumeCategorii)
-               // {
-               //     if(CategorieProdus.Equals(p))-> sa adauge in categoria p
-               // }
-                
-                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine);
-                
+                switch (CategorieProdus)
+                {
+                    case "Laptopuri":
+                        categorieId = 1;
+                        break;
+                    case "Tablete":
+                        categorieId = 2;
+                        break;
+                    case "Telefoane":
+                        categorieId = 3;
+                        break;
+                    case "PC si Periferice":
+                        categorieId = 4;
+                        break;
+                    case "TV si Audio-Video":
+                        categorieId = 5;
+                        break;
+                    case "Gaming":
+                        categorieId = 6;
+                        break;
+                    case "Haine":
+                        categorieId = 7;
+                        break;
+                    case "Carti":
+                        categorieId = 8;
+                        break;
+                    case "Auto si Moto":
+                        categorieId = 9;
+                        break;
+                    
+
+                }
+
+                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine,categorieId);
+
             }
-           catch
-           {
-              MessageBox.Show("A aparut o eroareeeeee", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-           }
+            catch
+            {
+                MessageBox.Show("A aparut o eroareeeeee", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -109,7 +138,7 @@ namespace GlobalShop
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
