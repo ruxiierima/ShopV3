@@ -35,6 +35,7 @@ namespace GlobalShop
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Magazin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -96,7 +97,6 @@ namespace GlobalShop
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -133,14 +133,28 @@ namespace GlobalShop
             this.panel1.Size = new System.Drawing.Size(241, 658);
             this.panel1.TabIndex = 0;
             // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button22.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(42, 584);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(149, 35);
+            this.button22.TabIndex = 11;
+            this.button22.Text = "pagina Admin";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // button21
             // 
+            this.button21.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button21.Font = new System.Drawing.Font("Champagne & Limousines", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.Location = new System.Drawing.Point(20, 133);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(147, 32);
+            this.button21.Size = new System.Drawing.Size(171, 32);
             this.button21.TabIndex = 10;
             this.button21.Text = "Adauguare Produs Nou";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button7
@@ -148,7 +162,7 @@ namespace GlobalShop
             this.button7.BackColor = System.Drawing.SystemColors.Highlight;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Snow;
             this.button7.Location = new System.Drawing.Point(-1, 511);
             this.button7.Name = "button7";
@@ -162,7 +176,7 @@ namespace GlobalShop
             this.button8.BackColor = System.Drawing.SystemColors.Highlight;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Snow;
             this.button8.Location = new System.Drawing.Point(-1, 472);
             this.button8.Name = "button8";
@@ -176,7 +190,7 @@ namespace GlobalShop
             this.button9.BackColor = System.Drawing.SystemColors.Highlight;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Snow;
             this.button9.Location = new System.Drawing.Point(-1, 433);
             this.button9.Name = "button9";
@@ -190,7 +204,7 @@ namespace GlobalShop
             this.button4.BackColor = System.Drawing.SystemColors.Highlight;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Snow;
             this.button4.Location = new System.Drawing.Point(-1, 394);
             this.button4.Name = "button4";
@@ -204,7 +218,7 @@ namespace GlobalShop
             this.button5.BackColor = System.Drawing.SystemColors.Highlight;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Snow;
             this.button5.Location = new System.Drawing.Point(-1, 355);
             this.button5.Name = "button5";
@@ -218,7 +232,7 @@ namespace GlobalShop
             this.button6.BackColor = System.Drawing.SystemColors.Highlight;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Snow;
             this.button6.Location = new System.Drawing.Point(-1, 316);
             this.button6.Name = "button6";
@@ -232,7 +246,7 @@ namespace GlobalShop
             this.button3.BackColor = System.Drawing.SystemColors.Highlight;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Snow;
             this.button3.Location = new System.Drawing.Point(-1, 277);
             this.button3.Name = "button3";
@@ -246,7 +260,7 @@ namespace GlobalShop
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Snow;
             this.button2.Location = new System.Drawing.Point(-1, 238);
             this.button2.Name = "button2";
@@ -260,7 +274,7 @@ namespace GlobalShop
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Snow;
             this.button1.Location = new System.Drawing.Point(-1, 199);
             this.button1.Name = "button1";
@@ -272,11 +286,11 @@ namespace GlobalShop
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Champagne & Limousines", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
             this.label2.Location = new System.Drawing.Point(13, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 37);
+            this.label2.Size = new System.Drawing.Size(120, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Produse";
             // 
@@ -325,80 +339,80 @@ namespace GlobalShop
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(789, 519);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(99, 29);
+            this.label20.Size = new System.Drawing.Size(89, 26);
             this.label20.TabIndex = 47;
             this.label20.Text = "label13";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(560, 519);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 29);
+            this.label19.Size = new System.Drawing.Size(89, 26);
             this.label19.TabIndex = 46;
             this.label19.Text = "label13";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(325, 519);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(99, 29);
+            this.label18.Size = new System.Drawing.Size(89, 26);
             this.label18.TabIndex = 45;
             this.label18.Text = "label13";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(93, 519);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 29);
+            this.label17.Size = new System.Drawing.Size(89, 26);
             this.label17.TabIndex = 44;
             this.label17.Text = "label13";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(790, 227);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 29);
+            this.label16.Size = new System.Drawing.Size(89, 26);
             this.label16.TabIndex = 43;
             this.label16.Text = "label13";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(559, 227);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 29);
+            this.label15.Size = new System.Drawing.Size(89, 26);
             this.label15.TabIndex = 42;
             this.label15.Text = "label13";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(324, 227);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 29);
+            this.label14.Size = new System.Drawing.Size(89, 26);
             this.label14.TabIndex = 41;
             this.label14.Text = "label13";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(93, 227);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 29);
+            this.label13.Size = new System.Drawing.Size(89, 26);
             this.label13.TabIndex = 40;
             this.label13.Text = "label13";
             // 
@@ -678,7 +692,7 @@ namespace GlobalShop
             // 
             // button10
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Champagne & Limousines", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(862, 43);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(147, 40);
@@ -696,15 +710,16 @@ namespace GlobalShop
             this.metroButton1.Size = new System.Drawing.Size(55, 41);
             this.metroButton1.TabIndex = 2;
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Champagne & Limousines", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(37, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 24);
+            this.label1.Size = new System.Drawing.Size(171, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cauta produsul dorit";
             // 
@@ -839,16 +854,6 @@ namespace GlobalShop
             this.button19.Text = "Intoarce-te";
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(48, 582);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(121, 29);
-            this.button22.TabIndex = 11;
-            this.button22.Text = "pagina Admin";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // Magazin
             // 

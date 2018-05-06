@@ -38,22 +38,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Champagne & Limousines", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(132, 100);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 55);
+            this.label1.Size = new System.Drawing.Size(128, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "Salut!";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(70, 168);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 29);
+            this.label2.Size = new System.Drawing.Size(276, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Introdu parola contului tau";
             // 
@@ -61,7 +61,7 @@
             // 
             this.continua.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.continua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.continua.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.continua.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.continua.Location = new System.Drawing.Point(43, 270);
             this.continua.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.continua.Name = "continua";

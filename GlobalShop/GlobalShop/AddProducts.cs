@@ -35,8 +35,8 @@ namespace GlobalShop
             int categorieId=0;
             int branduriId = 0;
 
-            try
-            {
+           // try
+          //  {
                 switch (CategorieProdus)
                 {
                     case "Laptopuri":
@@ -70,51 +70,65 @@ namespace GlobalShop
 
                 switch (BrandProdus)
                 {
-                    case "Apple":
+                    case "Lenovo":
                         branduriId = 1;
                         break;
-                    case "Lenovo":
+                    case "HP":
                         branduriId = 2;
                         break;
-                    case "Dell":
+                    case "Asus":
                         branduriId = 3;
                         break;
-                    case "Samsung":
+                    case "Dell":
                         branduriId = 4;
                         break;
-                    case "Huawei":
+                    case "Acer":
                         branduriId = 5;
                         break;
-                    case "Sony":
+                    case "Apple":
                         branduriId = 6;
                         break;
-                    case "Xiaomi":
+                    case "MSI":
                         branduriId = 7;
                         break;
-                    case "LG":
+                    case "Toshiba":
                         branduriId = 8;
                         break;
-                    case "Allview":
+                    case "Microsoft":
                         branduriId = 9;
                         break;
-                    case "Assus":
+                    case "Samsung":
                         branduriId = 10;
                         break;
-                    case "Hurricane":
+                    case "Huawei":
                         branduriId = 11;
                         break;
-                    case "Toshiba":
+                    case "Xia0mi":
                         branduriId = 12;
                         break;
-                }
+                    case "Sony":
+                         branduriId = 13;
+                    break;
+                    case "LG":
+                        branduriId = 14;
+                    break;
+                    case "Allview":
+                        branduriId = 15;
+                    break;
+                     case "HTC":
+                        branduriId = 16;
+                    break;
 
-                AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine,categorieId,branduriId);
 
             }
-            catch
-            {
-                MessageBox.Show("A aparut o eroareeeeee", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine, categorieId,branduriId);
+
+          //  }
+            //catch
+            //{
+             //   MessageBox.Show("A aparut o eroareeeeee", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           // }
 
         }
 

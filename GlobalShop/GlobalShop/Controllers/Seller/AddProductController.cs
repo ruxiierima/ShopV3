@@ -11,20 +11,20 @@ namespace GlobalShop.Controllers.Seller
     internal class AddProductController
     {
         private static ShopEntities shop = new ShopEntities();
-        
-        public static void AddProduct(string Nume,decimal Pret,int Stoc,string Caracteristici, byte[] Imagine,int CategorieId,int BrandId)
+
+        public static void AddProduct(string Nume, decimal Pret, int Stoc, string Caracteristici, byte[] Imagine, int CategorieId,int BrandId)
         {
-            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine,CategorieId,BrandId);
-            try
-            {
+            Produse produs = new Produse(Nume, Pret, Stoc, Caracteristici, Imagine, CategorieId,BrandId);
+           // try
+            //{
                 AddProductController.CreateProduct(produs);
                 MessageBox.Show("Produs adaugat cu succes","ADAUGAT", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
-            }
-            catch (Exception)
-           {
-                MessageBox.Show("A aparut o eroare", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //}
+            //catch (Exception )
+           //{
+               // MessageBox.Show("Nu s-a putut adauga un produs", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           // }
         }
         public static void CreateProduct(Produse produs)
         {

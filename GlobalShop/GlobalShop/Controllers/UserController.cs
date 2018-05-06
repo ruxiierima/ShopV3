@@ -15,6 +15,10 @@ namespace GlobalShop.Controllers
         {
             return shop.Users.ToList();
         }
+        public static List<User> GeetUsers()
+        {
+            return shop.Users.ToList();
+        }
 
         public static User GetUser(string email)
         {
