@@ -27,108 +27,22 @@ namespace GlobalShop
             decimal pret = Decimal.Parse(pretTExtBox.Text);
             int stocProduse = int.Parse(stoc.Text);
             string caracteristici = textBox1.Text;
-            int optiune = checkedListBox1.SelectedIndex;
-            int optiune1 = checkedListBox2.SelectedIndex;
-            string CategorieProdus = checkedListBox1.GetItemText(optiune);
-            string BrandProdus = checkedListBox2.GetItemText(optiune1);
+            int optiune = checkedListBox1.SelectedIndex+1;
+            int optiune1 = checkedListBox2.SelectedIndex+1;
             byte[] imagine = imageToByteArray(pictureBox1.Image);
             int categorieId=0;
             int branduriId = 0;
 
-           // try
-          //  {
-                switch (CategorieProdus)
-                {
-                    case "Laptopuri":
-                        categorieId = 1;
-                        break;
-                    case "Tablete":
-                        categorieId = 2;
-                        break;
-                    case "Telefoane":
-                        categorieId = 3;
-                        break;
-                    case "PC si Periferice":
-                        categorieId = 4;
-                        break;
-                    case "TV si Audio-Video":
-                        categorieId = 5;
-                        break;
-                    case "Gaming":
-                        categorieId = 6;
-                        break;
-                    case "Haine":
-                        categorieId = 7;
-                        break;
-                    case "Carti":
-                        categorieId = 8;
-                        break;
-                    case "Auto si Moto":
-                        categorieId = 9;
-                        break;
-                         }
-
-                switch (BrandProdus)
-                {
-                    case "Lenovo":
-                        branduriId = 1;
-                        break;
-                    case "HP":
-                        branduriId = 2;
-                        break;
-                    case "Asus":
-                        branduriId = 3;
-                        break;
-                    case "Dell":
-                        branduriId = 4;
-                        break;
-                    case "Acer":
-                        branduriId = 5;
-                        break;
-                    case "Apple":
-                        branduriId = 6;
-                        break;
-                    case "MSI":
-                        branduriId = 7;
-                        break;
-                    case "Toshiba":
-                        branduriId = 8;
-                        break;
-                    case "Microsoft":
-                        branduriId = 9;
-                        break;
-                    case "Samsung":
-                        branduriId = 10;
-                        break;
-                    case "Huawei":
-                        branduriId = 11;
-                        break;
-                    case "Xia0mi":
-                        branduriId = 12;
-                        break;
-                    case "Sony":
-                         branduriId = 13;
-                    break;
-                    case "LG":
-                        branduriId = 14;
-                    break;
-                    case "Allview":
-                        branduriId = 15;
-                    break;
-                     case "HTC":
-                        branduriId = 16;
-                    break;
-
-
-            }
-
+           try
+            {
+               
             AddProductController.AddProduct(nume, pret, stocProduse, caracteristici, imagine, categorieId,branduriId);
 
-          //  }
-            //catch
-            //{
-             //   MessageBox.Show("A aparut o eroareeeeee", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-           // }
+            }
+            catch
+            {
+                MessageBox.Show("A aparut o eroareeeeee", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
