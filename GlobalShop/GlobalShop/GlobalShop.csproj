@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -72,11 +75,11 @@
     <Compile Include="Admin.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AdministrationShop.cs">
+    <Compile Include="AdministratorWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdministrationShop.Designer.cs">
-      <DependentUpon>AdministrationShop.cs</DependentUpon>
+    <Compile Include="AdministratorWindow.Designer.cs">
+      <DependentUpon>AdministratorWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Branduri.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
@@ -84,15 +87,34 @@
     <Compile Include="CategoriiProduse.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\Administartor\AdminsController.cs" />
     <Compile Include="Controllers\ConfirmationMail.cs" />
+    <Compile Include="Controllers\Buy\CumparareController.cs" />
+    <Compile Include="Controllers\Buy\CumparareItemController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Products\CategorieController.cs" />
     <Compile Include="Controllers\Products\CautareProduse.cs" />
     <Compile Include="Controllers\Products\CheckStoc.cs" />
+    <Compile Include="Controllers\Products\ButtonController.cs" />
+    <Compile Include="Controllers\Products\CosController.cs" />
     <Compile Include="Controllers\Products\ProduseController.cs" />
     <Compile Include="Controllers\Products\RandomProducts.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
-    <Compile Include="Controllers\Seller\AddProductController.cs" />
+    <Compile Include="Controllers\Seller\AddProductsController.cs" />
+    <Compile Include="Controllers\Seller\VanzatorController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cumparare.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
@@ -104,12 +126,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InfoUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InfoUsers.Designer.cs">
-      <DependentUpon>InfoUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Log.cs">
       <SubType>Form</SubType>
@@ -158,14 +174,17 @@
     <EmbeddedResource Include="AddProducts.resx">
       <DependentUpon>AddProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdministrationShop.resx">
-      <DependentUpon>AdministrationShop.cs</DependentUpon>
+    <EmbeddedResource Include="AdministratorWindow.resx">
+      <DependentUpon>AdministratorWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfoUsers.resx">
-      <DependentUpon>InfoUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log.resx">
       <DependentUpon>Log.cs</DependentUpon>
@@ -206,9 +225,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-search-50.png" />
@@ -227,7 +244,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\Admin\" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
 </Project>

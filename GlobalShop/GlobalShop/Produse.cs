@@ -11,17 +11,15 @@ namespace GlobalShop
 {
     using System;
     using System.Collections.Generic;
-    using System.Drawing;
-
+    
     public partial class Produse
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Produse()
         {
-            
             this.CumparareItems = new HashSet<CumparareItem>();
         }
-        public Produse(string Nume, decimal PretProdus,int Stoc, string Caracteristici, byte[] imagine,int CategorieId,int BrandId)
+        public Produse(string Nume, decimal PretProdus, int Stoc, string Caracteristici, byte[] imagine, int CategorieId, int BrandId,int VanzatoId)
         {
             this.NumeProdus = Nume;
             this.Pret = PretProdus;
@@ -30,9 +28,10 @@ namespace GlobalShop
             this.Imagine = imagine;
             this.CategorieId = CategorieId;
             this.BrandId = BrandId;
-            
+            this.VanzatorId = VanzatorId;
+
         }
-    
+
         public int ProdusId { get; set; }
         public Nullable<int> VanzatorId { get; set; }
         public Nullable<int> BrandId { get; set; }

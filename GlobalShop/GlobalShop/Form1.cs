@@ -14,7 +14,7 @@ namespace GlobalShop
 {
     public partial class Form1 : MetroForm
     {
-        string emailAdress;
+        public static string emailAdress;
         public Form1()
         {
             InitializeComponent();
@@ -25,13 +25,14 @@ namespace GlobalShop
 
         private void continua_Click(object sender, EventArgs e)
         {
-            emailAdress = email.Text;
+           emailAdress = email.Text;
             if (LoginController.IsValidEmail(emailAdress) == true)
             {
                 if (LoginController.Login(emailAdress) == true)
                 {
                     Log log = new Log(emailAdress);
                     log.Show();
+                    
                 }
                 else
                 {
@@ -51,9 +52,11 @@ namespace GlobalShop
         }
 
         private void email_TextChanged(object sender, EventArgs e)
-        {
+       {
 
         }
+
+   
 
         private void label2_Click(object sender, EventArgs e)
         {

@@ -27,8 +27,24 @@ namespace GlobalShop
             {
                 User user = new User();
                 user = UserController.GetUser(email);
-                Magazin magazin = new Magazin(user);
-                magazin.Show();
+                if (LoginController.CheckVanzator(user.UserId) == false && LoginController.CheckAdmin(user.UserId)==false)
+                {
+                    Magazin magazin = new Magazin(user);
+                    magazin.Show();
+                }
+                else if(LoginController.CheckAdmin(user.UserId)==true && LoginController.CheckVanzator(user.UserId) == false)
+                {
+                    AdministratorWindow administratorWindow = new AdministratorWindow();
+                    administratorWindow.Show();
+
+                }
+                else if (LoginController.CheckVanzator(user.UserId) == true && LoginController.CheckAdmin(user.UserId)==false)
+                {
+                    AddProducts addProducts = new AddProducts();
+                    addProducts.Show();
+                    Magazin magazin = new Magazin();
+                    magazin.Visible = false;
+                }
                 this.Close();
             }
             else
@@ -40,10 +56,16 @@ namespace GlobalShop
 
         private void Log_Load(object sender, EventArgs e)
         {
-
+           
+           
         }
 
         private void parola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void email_label_Click(object sender, EventArgs e)
         {
 
         }

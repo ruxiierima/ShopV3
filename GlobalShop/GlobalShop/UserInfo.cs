@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace GlobalShop
 {
-    public partial class InfoUsers : Form
+    public partial class UserInfo : Form
     {
-        public InfoUsers()
+        User user;
+        public UserInfo()
         {
             InitializeComponent();
         }
-
-        public  System.Windows.Forms.Label returnEmail()
+        public UserInfo(User user)
         {
-            
+            this.user = user;
+        }
+        public System.Windows.Forms.Label returnEmail()
+        {
+
             return emailtxt;
         }
         public System.Windows.Forms.Label returnTelfon()
@@ -39,9 +43,9 @@ namespace GlobalShop
             return usersNameAppend;
         }
 
-        private void emailtext_TextChanged(object sender, EventArgs e)
+        private void UserInfo_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
