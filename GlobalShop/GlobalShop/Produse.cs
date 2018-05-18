@@ -19,7 +19,7 @@ namespace GlobalShop
         {
             this.CumparareItems = new HashSet<CumparareItem>();
         }
-        public Produse(string Nume, decimal PretProdus, int Stoc, string Caracteristici, byte[] imagine, int CategorieId, int BrandId,int VanzatoId)
+        public Produse(string Nume, decimal PretProdus, int Stoc, string Caracteristici, byte[] imagine, int CategorieId, int BrandId,int vanzatorId)
         {
             this.NumeProdus = Nume;
             this.Pret = PretProdus;
@@ -28,7 +28,7 @@ namespace GlobalShop
             this.Imagine = imagine;
             this.CategorieId = CategorieId;
             this.BrandId = BrandId;
-            this.VanzatorId = VanzatorId;
+            this.VanzatorId = vanzatorId;
 
         }
 
@@ -44,6 +44,7 @@ namespace GlobalShop
     
         public virtual Branduri Branduri { get; set; }
         public virtual CategoriiProduse CategoriiProduse { get; set; }
+       
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CumparareItem> CumparareItems { get; set; }
         public virtual Vanzatori Vanzatori { get; set; }

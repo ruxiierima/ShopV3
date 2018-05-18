@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -96,6 +97,10 @@
             this.sellerName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateFirma = new System.Windows.Forms.Panel();
+            this.parolaContVanzator = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.emailActiv = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.cui = new System.Windows.Forms.TextBox();
             this.cont = new System.Windows.Forms.TextBox();
@@ -105,10 +110,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.emailCompanie = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.emailActiv = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.parolaContVanzator = new System.Windows.Forms.TextBox();
+            this.VizualizareComenzi = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.shopV3DataSet = new GlobalShop.ShopV3DataSet();
+            this.shopV3DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addProductLabel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -123,6 +133,10 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.dateFirma.SuspendLayout();
+            this.VizualizareComenzi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopV3DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopV3DataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // checkedListBox2
@@ -392,6 +406,7 @@
             this.button3.TabIndex = 37;
             this.button3.Text = "Vizualizare comenzi";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // viewProducts
             // 
@@ -662,6 +677,7 @@
             this.Auto_moto_button.TabIndex = 9;
             this.Auto_moto_button.Text = "Auto & Moto";
             this.Auto_moto_button.UseVisualStyleBackColor = false;
+            this.Auto_moto_button.Click += new System.EventHandler(this.Auto_moto_button_Click);
             // 
             // carti_button
             // 
@@ -676,6 +692,7 @@
             this.carti_button.TabIndex = 8;
             this.carti_button.Text = "Carti";
             this.carti_button.UseVisualStyleBackColor = false;
+            this.carti_button.Click += new System.EventHandler(this.carti_button_Click);
             // 
             // haine_button
             // 
@@ -690,6 +707,7 @@
             this.haine_button.TabIndex = 7;
             this.haine_button.Text = "Haine";
             this.haine_button.UseVisualStyleBackColor = false;
+            this.haine_button.Click += new System.EventHandler(this.haine_button_Click);
             // 
             // gaming_button
             // 
@@ -704,6 +722,7 @@
             this.gaming_button.TabIndex = 6;
             this.gaming_button.Text = "Gaming";
             this.gaming_button.UseVisualStyleBackColor = false;
+            this.gaming_button.Click += new System.EventHandler(this.gaming_button_Click);
             // 
             // tv_Audio_button
             // 
@@ -718,6 +737,7 @@
             this.tv_Audio_button.TabIndex = 5;
             this.tv_Audio_button.Text = "TV, Audio-Video & Foto";
             this.tv_Audio_button.UseVisualStyleBackColor = false;
+            this.tv_Audio_button.Click += new System.EventHandler(this.tv_Audio_button_Click);
             // 
             // Pc_Periferice_button
             // 
@@ -732,6 +752,7 @@
             this.Pc_Periferice_button.TabIndex = 4;
             this.Pc_Periferice_button.Text = "PC & Periferice";
             this.Pc_Periferice_button.UseVisualStyleBackColor = false;
+            this.Pc_Periferice_button.Click += new System.EventHandler(this.Pc_Periferice_button_Click);
             // 
             // telefoaneBUtton
             // 
@@ -746,6 +767,7 @@
             this.telefoaneBUtton.TabIndex = 3;
             this.telefoaneBUtton.Text = "Telefoane";
             this.telefoaneBUtton.UseVisualStyleBackColor = false;
+            this.telefoaneBUtton.Click += new System.EventHandler(this.telefoaneBUtton_Click);
             // 
             // TableteButton
             // 
@@ -760,6 +782,7 @@
             this.TableteButton.TabIndex = 2;
             this.TableteButton.Text = "Tablete";
             this.TableteButton.UseVisualStyleBackColor = false;
+            this.TableteButton.Click += new System.EventHandler(this.TableteButton_Click);
             // 
             // Laptopbutton
             // 
@@ -774,6 +797,7 @@
             this.Laptopbutton.TabIndex = 1;
             this.Laptopbutton.Text = "Laptopuri";
             this.Laptopbutton.UseVisualStyleBackColor = false;
+            this.Laptopbutton.Click += new System.EventHandler(this.Laptopbutton_Click);
             // 
             // label4
             // 
@@ -802,9 +826,9 @@
             this.panel3.Controls.Add(this.nameProduct_label);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Location = new System.Drawing.Point(309, 13);
+            this.panel3.Location = new System.Drawing.Point(291, -2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1017, 680);
+            this.panel3.Size = new System.Drawing.Size(1035, 695);
             this.panel3.TabIndex = 20;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -953,11 +977,47 @@
             this.dateFirma.Controls.Add(this.label13);
             this.dateFirma.Controls.Add(this.label12);
             this.dateFirma.Controls.Add(this.label11);
-            this.dateFirma.Location = new System.Drawing.Point(300, 6);
+            this.dateFirma.Location = new System.Drawing.Point(306, 14);
             this.dateFirma.Name = "dateFirma";
-            this.dateFirma.Size = new System.Drawing.Size(988, 633);
+            this.dateFirma.Size = new System.Drawing.Size(982, 625);
             this.dateFirma.TabIndex = 12;
             this.dateFirma.Paint += new System.Windows.Forms.PaintEventHandler(this.dateFirma_Paint);
+            // 
+            // parolaContVanzator
+            // 
+            this.parolaContVanzator.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parolaContVanzator.Location = new System.Drawing.Point(275, 428);
+            this.parolaContVanzator.Name = "parolaContVanzator";
+            this.parolaContVanzator.Size = new System.Drawing.Size(294, 35);
+            this.parolaContVanzator.TabIndex = 15;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(18, 436);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 26);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Parola :";
+            // 
+            // emailActiv
+            // 
+            this.emailActiv.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailActiv.Location = new System.Drawing.Point(275, 359);
+            this.emailActiv.Name = "emailActiv";
+            this.emailActiv.Size = new System.Drawing.Size(294, 35);
+            this.emailActiv.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(18, 362);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(248, 26);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Adresa de emai activa :";
             // 
             // button9
             // 
@@ -1046,47 +1106,78 @@
             this.emailCompanie.Size = new System.Drawing.Size(0, 22);
             this.emailCompanie.TabIndex = 37;
             // 
-            // label15
+            // VizualizareComenzi
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(18, 362);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(248, 26);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Adresa de emai activa :";
+            this.VizualizareComenzi.Controls.Add(this.dataGridView1);
+            this.VizualizareComenzi.Controls.Add(this.label17);
+            this.VizualizareComenzi.Location = new System.Drawing.Point(303, 1);
+            this.VizualizareComenzi.Name = "VizualizareComenzi";
+            this.VizualizareComenzi.Size = new System.Drawing.Size(609, 479);
+            this.VizualizareComenzi.TabIndex = 16;
+            this.VizualizareComenzi.Paint += new System.Windows.Forms.PaintEventHandler(this.VizualizareComenzi_Paint);
             // 
-            // emailActiv
+            // label17
             // 
-            this.emailActiv.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailActiv.Location = new System.Drawing.Point(275, 359);
-            this.emailActiv.Name = "emailActiv";
-            this.emailActiv.Size = new System.Drawing.Size(294, 35);
-            this.emailActiv.TabIndex = 13;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(57, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(181, 22);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Vizualizare comenzi:";
             // 
-            // label16
+            // dataGridView1
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(18, 436);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 26);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Parola :";
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridView1.DataSource = this.shopV3DataSetBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(71, 98);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(434, 273);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // parolaContVanzator
+            // shopV3DataSet
             // 
-            this.parolaContVanzator.Font = new System.Drawing.Font("Champagne & Limousines", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parolaContVanzator.Location = new System.Drawing.Point(275, 428);
-            this.parolaContVanzator.Name = "parolaContVanzator";
-            this.parolaContVanzator.Size = new System.Drawing.Size(294, 35);
-            this.parolaContVanzator.TabIndex = 15;
+            this.shopV3DataSet.DataSetName = "ShopV3DataSet";
+            this.shopV3DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // shopV3DataSetBindingSource
+            // 
+            this.shopV3DataSetBindingSource.DataSource = this.shopV3DataSet;
+            this.shopV3DataSetBindingSource.Position = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nume User";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Numar Comanda";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Produse";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Total";
+            this.Column4.Name = "Column4";
             // 
             // AddProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.VizualizareComenzi);
             this.Controls.Add(this.emailCompanie);
             this.Controls.Add(this.dateFirma);
             this.Controls.Add(this.panel3);
@@ -1119,6 +1210,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.dateFirma.ResumeLayout(false);
             this.dateFirma.PerformLayout();
+            this.VizualizareComenzi.ResumeLayout(false);
+            this.VizualizareComenzi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopV3DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopV3DataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1207,5 +1303,14 @@
         private System.Windows.Forms.TextBox parolaContVanzator;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox emailActiv;
+        private System.Windows.Forms.Panel VizualizareComenzi;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource shopV3DataSetBindingSource;
+        private ShopV3DataSet shopV3DataSet;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

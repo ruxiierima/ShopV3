@@ -39,21 +39,21 @@ namespace GlobalShop
             this.user = user;
 
            
-            pictureBox1.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
@@ -61,21 +61,21 @@ namespace GlobalShop
         {
 
             InitializeComponent();
-            pictureBox1.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -161,9 +161,9 @@ namespace GlobalShop
                 {
                     //BitmapImage 
                     //pictures[0].Image = Bitmap.FromFile(Convert.ToBase64String(produses[0].Imagine));
-                    byte[] b = produses[73].Imagine;
+                    //byte[] b = produses[73].Imagine;
                     // var ms = new MemoryStream(produses[0].Imagine);
-                    Console.WriteLine(b+" "+produses[0].NumeProdus);
+                    //Console.WriteLine(b+" "+produses[0].NumeProdus);
                     //Image img = Image.FromStream(ms);
                     //pictureBox1.Image = img;
                     //pictureBox1.Image = Image.FromStream(ms);
@@ -208,7 +208,7 @@ namespace GlobalShop
             panel2.Visible = false;
             DateTime tomorrow = DateTime.Now.AddDays(1);
             label23.Text = "Livrare standard: Ajunge in data de " + tomorrow.ToString("dd-MM-yyyy");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\ProiectDan\\ShopV3\\ShopV3\\Poze produse\\acer.jpg");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\ierima\\Desktop\\proiect ii -Ruxi\\ShopV3\\Poze produse\\acer.jpg");
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             label24.Text = produses[currentProduct].NumeProdus;
             pret.Text = produses[currentProduct].Pret.ToString() + " Lei";

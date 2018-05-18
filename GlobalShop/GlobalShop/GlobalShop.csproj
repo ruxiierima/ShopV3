@@ -103,6 +103,11 @@
     <Compile Include="Controllers\Seller\AddProductsController.cs" />
     <Compile Include="Controllers\Seller\VanzatorController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="ShopV3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopV3DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +227,17 @@
     </EntityDeploy>
     <None Include="ShopModel.edmx.diagram">
       <DependentUpon>ShopModel.edmx</DependentUpon>
+    </None>
+    <None Include="ShopV3DataSet.xsc">
+      <DependentUpon>ShopV3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShopV3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShopV3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShopV3DataSet.xss">
+      <DependentUpon>ShopV3DataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
